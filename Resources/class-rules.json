@@ -1,0 +1,1087 @@
+{
+  "compatibility": 2017,
+  "services": [
+    {
+      "name": "Workspace",
+      "icon": "ld-icon-service-workspace"
+    },
+    {
+      "name": "Players",
+      "icon": "ld-icon-service-players"
+    },
+    {
+      "name": "Lighting",
+      "icon": "ld-icon-service-lighting"
+    },
+    {
+      "name": "ReplicatedFirst",
+      "icon": "ld-icon-service-storage"
+    },
+    {
+      "name": "ReplicatedStorage",
+      "icon": "ld-icon-service-storage"
+    },
+    {
+      "name": "ServerScriptService",
+      "icon": "ld-icon-service-scripts"
+    },
+    {
+      "name": "ServerStorage",
+      "icon": "ld-icon-service-serverstorage"
+    },
+    {
+      "name": "StarterGui",
+      "icon": "ld-icon-service-gui"
+    },
+    {
+      "name": "StarterPack",
+      "icon": "ld-icon-service-pack"
+    },
+    {
+      "name": "StarterPlayer",
+      "icon": "ld-icon-service-player"
+    },
+    {
+      "name": "SoundService",
+      "icon": "ld-icon-service-sound"
+    },
+    {
+      "name": "Teams",
+      "icon": "ld-icon-service-teams"
+    }
+  ],
+  "defaults": [
+    {
+      "className": "StarterPlayerScripts",
+      "parent": "StarterPlayer"
+    },
+    {
+      "className": "StarterCharacterScripts",
+      "parent": "StarterPlayer"
+    }
+  ],
+  "serviceChildren": {
+    "Players": [
+      "Player"
+    ],
+    "Teams": [
+      "Team"
+    ],
+    "StarterPlayer": [],
+    "Lighting": [
+      "Folder",
+      "ModuleScript",
+      "@values"
+    ],
+    "StarterGui": [
+      "LayerCollector",
+      "Folder",
+      "LocalScript",
+      "ModuleScript",
+      "@values"
+    ],
+    "StarterPack": [
+      "Folder",
+      "LocalScript",
+      "Script",
+      "ModuleScript",
+      "@values",
+      "Tool"
+    ],
+    "ReplicatedFirst": [
+      "LocalScript",
+      "ModuleScript",
+      "Folder",
+      "LayerCollector",
+      "@values"
+    ],
+    "ServerScriptService": [
+      "Script",
+      "ModuleScript",
+      "Folder",
+      "@values",
+      "BindableEvent",
+      "BindableFunction"
+    ],
+    "SoundService": [
+      "Sound",
+      "Folder",
+      "ModuleScript",
+      "@values"
+    ]
+  },
+  "groups": {
+    "world": [
+      "Workspace",
+      "Model",
+      "Folder",
+      "ReplicatedStorage",
+      "ServerStorage",
+      "Tool"
+    ],
+    "storage": [
+      "Folder",
+      "ReplicatedStorage",
+      "ServerStorage",
+      "ReplicatedFirst"
+    ],
+    "gui": [
+      "LayerCollector",
+      "GuiObject"
+    ],
+    "scriptable": [
+      "Workspace",
+      "Model",
+      "Folder",
+      "BasePart",
+      "ReplicatedStorage",
+      "ServerStorage",
+      "ServerScriptService",
+      "StarterGui",
+      "StarterPack",
+      "StarterPlayerScripts",
+      "StarterCharacterScripts",
+      "ReplicatedFirst",
+      "SoundService",
+      "Lighting",
+      "LayerCollector",
+      "GuiObject",
+      "LuaSourceContainer",
+      "@values",
+      "Tool",
+      "Backpack",
+      "PlayerGui",
+      "PlayerScripts"
+    ],
+    "values": [
+      "StringValue",
+      "IntValue",
+      "NumberValue",
+      "BoolValue",
+      "ObjectValue",
+      "Vector3Value",
+      "Color3Value"
+    ]
+  },
+  "classes": {
+    "Part": {
+      "icon": "ld-icon-object-part",
+      "runtime": "part",
+      "parents": [
+        "@world"
+      ],
+      "kind": "cube",
+      "properties": [
+        "Name",
+        "Anchored",
+        "CanCollide",
+        "Color",
+        "Material",
+        "Transparency",
+        "Reflectance",
+        "Locked",
+        "Position",
+        "Size",
+        "Orientation",
+        "Velocity",
+        "Shape"
+      ]
+    },
+    "WedgePart": {
+      "icon": "ld-icon-object-wedge",
+      "runtime": "part",
+      "parents": [
+        "@world"
+      ],
+      "kind": "wedge",
+      "properties": [
+        "Name",
+        "Anchored",
+        "CanCollide",
+        "Color",
+        "Material",
+        "Transparency",
+        "Reflectance",
+        "Locked",
+        "Position",
+        "Size",
+        "Orientation",
+        "Velocity"
+      ]
+    },
+    "MeshPart": {
+      "icon": "ld-icon-object-part",
+      "runtime": "part",
+      "parents": [
+        "@world"
+      ],
+      "kind": "mesh",
+      "insert": false,
+      "properties": [
+        "Name",
+        "Anchored",
+        "CanCollide",
+        "Color",
+        "Material",
+        "Transparency",
+        "Reflectance",
+        "Locked",
+        "Position",
+        "Size",
+        "Orientation",
+        "Velocity",
+        "MeshId"
+      ]
+    },
+    "SpawnLocation": {
+      "icon": "ld-icon-service-player",
+      "runtime": "part",
+      "parents": [
+        "@world"
+      ],
+      "kind": "spawn",
+      "properties": [
+        "Name",
+        "Anchored",
+        "CanCollide",
+        "Color",
+        "Material",
+        "Transparency",
+        "Locked",
+        "Position",
+        "Size",
+        "Orientation",
+        "Enabled",
+        "Neutral",
+        "TeamColor"
+      ]
+    },
+    "Seat": {
+      "icon": "ld-icon-object-part",
+      "runtime": "part",
+      "parents": [
+        "@world"
+      ],
+      "kind": "seat",
+      "properties": [
+        "Name",
+        "Anchored",
+        "CanCollide",
+        "Color",
+        "Material",
+        "Transparency",
+        "Locked",
+        "Position",
+        "Size",
+        "Orientation",
+        "Disabled",
+        "Occupant"
+      ]
+    },
+    "Model": {
+      "icon": "ld-icon-object-model",
+      "runtime": "part",
+      "parents": [
+        "@world"
+      ],
+      "kind": "model",
+      "properties": [
+        "Name",
+        "PrimaryPart"
+      ]
+    },
+    "Folder": {
+      "icon": "ld-icon-object-folder",
+      "runtime": "container",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name"
+      ]
+    },
+    "Script": {
+      "icon": "ld-icon-object-script",
+      "runtime": "script",
+      "parents": [
+        "Workspace",
+        "Model",
+        "Folder",
+        "BasePart",
+        "ServerScriptService",
+        "ServerStorage",
+        "ReplicatedStorage",
+        "StarterPack",
+        "StarterCharacterScripts",
+        "Tool",
+        "Backpack"
+      ],
+      "properties": [
+        "Name",
+        "Disabled",
+        "Source"
+      ],
+      "defaults": {
+        "Source": "print(\"Ciao da Ludissey\")\n"
+      }
+    },
+    "LocalScript": {
+      "icon": "ld-icon-object-localscript",
+      "runtime": "script",
+      "parents": [
+        "StarterGui",
+        "LayerCollector",
+        "GuiObject",
+        "StarterPack",
+        "StarterPlayerScripts",
+        "StarterCharacterScripts",
+        "ReplicatedFirst",
+        "Folder",
+        "ReplicatedStorage",
+        "ServerStorage",
+        "Tool",
+        "Backpack",
+        "PlayerGui",
+        "PlayerScripts",
+        "Workspace",
+        "Model",
+        "BasePart"
+      ],
+      "properties": [
+        "Name",
+        "Disabled",
+        "Source"
+      ],
+      "defaults": {
+        "Source": "print(\"Ciao dal client\")\n"
+      }
+    },
+    "ModuleScript": {
+      "icon": "ld-icon-object-modulescript",
+      "runtime": "script",
+      "parents": [
+        "@scriptable",
+        "Tool",
+        "Backpack",
+        "PlayerGui",
+        "PlayerScripts"
+      ],
+      "properties": [
+        "Name",
+        "Source"
+      ],
+      "defaults": {
+        "Source": "local module = {}\n\nreturn module\n"
+      }
+    },
+    "ScreenGui": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "StarterGui",
+        "Folder",
+        "ReplicatedStorage",
+        "ServerStorage",
+        "ReplicatedFirst",
+        "PlayerGui"
+      ],
+      "properties": [
+        "Name",
+        "Enabled",
+        "DisplayOrder",
+        "ResetOnSpawn"
+      ]
+    },
+    "Frame": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Position",
+        "Size",
+        "AnchorPoint",
+        "BackgroundColor3",
+        "BackgroundTransparency",
+        "BorderColor3",
+        "BorderSizePixel",
+        "Visible",
+        "ZIndex",
+        "LayoutOrder",
+        "ClipsDescendants"
+      ]
+    },
+    "ScrollingFrame": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Position",
+        "Size",
+        "AnchorPoint",
+        "BackgroundColor3",
+        "BackgroundTransparency",
+        "BorderColor3",
+        "BorderSizePixel",
+        "Visible",
+        "ZIndex",
+        "LayoutOrder",
+        "CanvasSize",
+        "CanvasPosition",
+        "ScrollBarThickness",
+        "ScrollingEnabled"
+      ]
+    },
+    "TextLabel": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Position",
+        "Size",
+        "AnchorPoint",
+        "BackgroundColor3",
+        "BackgroundTransparency",
+        "BorderColor3",
+        "BorderSizePixel",
+        "Visible",
+        "ZIndex",
+        "LayoutOrder",
+        "Text",
+        "TextColor3",
+        "TextSize",
+        "Font",
+        "TextScaled",
+        "TextWrapped",
+        "TextXAlignment",
+        "TextYAlignment",
+        "TextTransparency"
+      ]
+    },
+    "TextButton": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Position",
+        "Size",
+        "AnchorPoint",
+        "BackgroundColor3",
+        "BackgroundTransparency",
+        "BorderColor3",
+        "BorderSizePixel",
+        "Visible",
+        "ZIndex",
+        "LayoutOrder",
+        "Text",
+        "TextColor3",
+        "TextSize",
+        "Font",
+        "TextScaled",
+        "TextWrapped",
+        "TextXAlignment",
+        "TextYAlignment",
+        "TextTransparency",
+        "AutoButtonColor"
+      ]
+    },
+    "TextBox": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Position",
+        "Size",
+        "AnchorPoint",
+        "BackgroundColor3",
+        "BackgroundTransparency",
+        "BorderColor3",
+        "BorderSizePixel",
+        "Visible",
+        "ZIndex",
+        "LayoutOrder",
+        "Text",
+        "TextColor3",
+        "TextSize",
+        "Font",
+        "TextXAlignment",
+        "TextYAlignment",
+        "ClearTextOnFocus",
+        "PlaceholderText"
+      ]
+    },
+    "ImageLabel": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Position",
+        "Size",
+        "AnchorPoint",
+        "BackgroundColor3",
+        "BackgroundTransparency",
+        "BorderColor3",
+        "BorderSizePixel",
+        "Visible",
+        "ZIndex",
+        "LayoutOrder",
+        "Image",
+        "ImageColor3",
+        "ImageTransparency"
+      ]
+    },
+    "ImageButton": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "gui",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Position",
+        "Size",
+        "AnchorPoint",
+        "BackgroundColor3",
+        "BackgroundTransparency",
+        "BorderColor3",
+        "BorderSizePixel",
+        "Visible",
+        "ZIndex",
+        "LayoutOrder",
+        "Image",
+        "ImageColor3",
+        "ImageTransparency",
+        "AutoButtonColor"
+      ]
+    },
+    "UIListLayout": {
+      "icon": "ld-icon-object-layout-list",
+      "runtime": "layout",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "Padding",
+        "FillDirection",
+        "HorizontalAlignment",
+        "VerticalAlignment",
+        "SortOrder"
+      ]
+    },
+    "UIGridLayout": {
+      "icon": "ld-icon-object-layout-grid",
+      "runtime": "layout",
+      "parents": [
+        "@gui"
+      ],
+      "properties": [
+        "Name",
+        "CellSize",
+        "CellPadding",
+        "FillDirection",
+        "HorizontalAlignment",
+        "VerticalAlignment",
+        "SortOrder"
+      ]
+    },
+    "UIPadding": {
+      "icon": "ld-icon-object-gui",
+      "runtime": "layout",
+      "parents": [
+        "GuiObject"
+      ],
+      "properties": [
+        "Name",
+        "PaddingTop",
+        "PaddingBottom",
+        "PaddingLeft",
+        "PaddingRight"
+      ]
+    },
+    "StringValue": {
+      "icon": "ld-icon-object-value",
+      "runtime": "value",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name",
+        "Value"
+      ]
+    },
+    "IntValue": {
+      "icon": "ld-icon-object-value",
+      "runtime": "value",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name",
+        "Value"
+      ]
+    },
+    "NumberValue": {
+      "icon": "ld-icon-object-value",
+      "runtime": "value",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name",
+        "Value"
+      ]
+    },
+    "BoolValue": {
+      "icon": "ld-icon-object-value",
+      "runtime": "value",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name",
+        "Value"
+      ]
+    },
+    "ObjectValue": {
+      "icon": "ld-icon-object-value",
+      "runtime": "value",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name",
+        "Value"
+      ]
+    },
+    "Vector3Value": {
+      "icon": "ld-icon-object-value",
+      "runtime": "value",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name",
+        "Value"
+      ]
+    },
+    "Color3Value": {
+      "icon": "ld-icon-object-value",
+      "runtime": "value",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name",
+        "Value"
+      ]
+    },
+    "BindableEvent": {
+      "icon": "ld-icon-object-event",
+      "runtime": "event",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name"
+      ]
+    },
+    "BindableFunction": {
+      "icon": "ld-icon-object-event",
+      "runtime": "event",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name"
+      ]
+    },
+    "RemoteEvent": {
+      "icon": "ld-icon-object-event",
+      "runtime": "event",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name"
+      ]
+    },
+    "RemoteFunction": {
+      "icon": "ld-icon-object-event",
+      "runtime": "event",
+      "parents": [
+        "@scriptable"
+      ],
+      "properties": [
+        "Name"
+      ]
+    },
+    "Sound": {
+      "icon": "ld-icon-object-sound",
+      "runtime": "sound",
+      "parents": [
+        "Workspace",
+        "BasePart",
+        "Model",
+        "Folder",
+        "SoundService",
+        "LayerCollector",
+        "GuiObject",
+        "ReplicatedStorage",
+        "ServerStorage"
+      ],
+      "properties": [
+        "Name",
+        "SoundId",
+        "Volume",
+        "Looped",
+        "Playing",
+        "PlaybackSpeed"
+      ]
+    },
+    "Team": {
+      "icon": "ld-icon-object-team",
+      "runtime": "team",
+      "parents": [
+        "Teams"
+      ],
+      "properties": [
+        "Name",
+        "TeamColor",
+        "AutoAssignable"
+      ]
+    },
+    "StarterPlayerScripts": {
+      "icon": "ld-icon-service-scripts",
+      "runtime": "container",
+      "parents": [
+        "StarterPlayer"
+      ],
+      "insert": false,
+      "properties": [
+        "Name"
+      ]
+    },
+    "StarterCharacterScripts": {
+      "icon": "ld-icon-service-scripts",
+      "runtime": "container",
+      "parents": [
+        "StarterPlayer"
+      ],
+      "insert": false,
+      "properties": [
+        "Name"
+      ]
+    },
+    "Humanoid": {
+      "icon": "ld-icon-object-character",
+      "runtime": "humanoid",
+      "parents": [
+        "Model"
+      ],
+      "properties": [
+        "Name",
+        "Health",
+        "MaxHealth",
+        "WalkSpeed",
+        "JumpPower"
+      ]
+    },
+    "Tool": {
+      "icon": "ld-icon-object-tool",
+      "runtime": "tool",
+      "parents": [
+        "StarterPack",
+        "Backpack",
+        "Workspace",
+        "Model",
+        "Folder",
+        "ReplicatedStorage",
+        "ServerStorage",
+        "Lighting"
+      ],
+      "properties": [
+        "Name",
+        "Enabled",
+        "RequiresHandle",
+        "CanBeDropped",
+        "ToolTip"
+      ]
+    },
+    "Player": {
+      "icon": "ld-icon-object-player",
+      "runtime": "container",
+      "parents": [
+        "Players"
+      ],
+      "insert": false,
+      "properties": [
+        "Name",
+        "UserId",
+        "Character"
+      ]
+    },
+    "PlayerGui": {
+      "icon": "ld-icon-service-gui",
+      "runtime": "container",
+      "parents": [
+        "Player"
+      ],
+      "insert": false,
+      "properties": [
+        "Name"
+      ]
+    },
+    "Backpack": {
+      "icon": "ld-icon-service-pack",
+      "runtime": "container",
+      "parents": [
+        "Player"
+      ],
+      "insert": false,
+      "properties": [
+        "Name"
+      ]
+    },
+    "PlayerScripts": {
+      "icon": "ld-icon-service-scripts",
+      "runtime": "container",
+      "parents": [
+        "Player"
+      ],
+      "insert": false,
+      "properties": [
+        "Name"
+      ]
+    }
+  },
+  "propertyDefaults": {
+    "Anchored": true,
+    "CanCollide": true,
+    "Locked": false,
+    "Transparency": 0,
+    "Reflectance": 0,
+    "Disabled": false,
+    "Enabled": true,
+    "Neutral": true,
+    "Visible": true,
+    "ZIndex": 1,
+    "LayoutOrder": 0,
+    "ClipsDescendants": false,
+    "DisplayOrder": 0,
+    "ResetOnSpawn": true,
+    "Position@GuiObject": {
+      "UDim2": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "Size@GuiObject": {
+      "UDim2": [
+        0,
+        100,
+        0,
+        100
+      ]
+    },
+    "AnchorPoint": {
+      "Vector2": [
+        0,
+        0
+      ]
+    },
+    "BackgroundColor3": {
+      "Color3": "FFFFFF"
+    },
+    "BackgroundTransparency": 0,
+    "BorderColor3": {
+      "Color3": "1B2A35"
+    },
+    "BorderSizePixel": 1,
+    "Text": {
+      "String": "Label"
+    },
+    "Text@TextButton": {
+      "String": "Button"
+    },
+    "Text@TextBox": {
+      "String": ""
+    },
+    "TextColor3": {
+      "Color3": "1B2A35"
+    },
+    "TextSize": 14,
+    "Font": {
+      "Enum": "SourceSans"
+    },
+    "TextScaled": false,
+    "TextWrapped": false,
+    "TextXAlignment": {
+      "Enum": "Center"
+    },
+    "TextYAlignment": {
+      "Enum": "Center"
+    },
+    "TextTransparency": 0,
+    "AutoButtonColor": true,
+    "ClearTextOnFocus": true,
+    "PlaceholderText": {
+      "String": ""
+    },
+    "Image": {
+      "Content": ""
+    },
+    "ImageColor3": {
+      "Color3": "FFFFFF"
+    },
+    "ImageTransparency": 0,
+    "CanvasSize": {
+      "UDim2": [
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    "CanvasPosition": {
+      "Vector2": [
+        0,
+        0
+      ]
+    },
+    "ScrollBarThickness": 12,
+    "ScrollingEnabled": true,
+    "Padding@UIListLayout": {
+      "UDim": [
+        0,
+        0
+      ]
+    },
+    "FillDirection": {
+      "Enum": "Vertical"
+    },
+    "FillDirection@UIGridLayout": {
+      "Enum": "Horizontal"
+    },
+    "HorizontalAlignment": {
+      "Enum": "Left"
+    },
+    "VerticalAlignment": {
+      "Enum": "Top"
+    },
+    "SortOrder": {
+      "Enum": "Name"
+    },
+    "CellSize": {
+      "UDim2": [
+        0,
+        100,
+        0,
+        100
+      ]
+    },
+    "CellPadding": {
+      "UDim2": [
+        0,
+        5,
+        0,
+        5
+      ]
+    },
+    "PaddingTop": {
+      "UDim": [
+        0,
+        0
+      ]
+    },
+    "PaddingBottom": {
+      "UDim": [
+        0,
+        0
+      ]
+    },
+    "PaddingLeft": {
+      "UDim": [
+        0,
+        0
+      ]
+    },
+    "PaddingRight": {
+      "UDim": [
+        0,
+        0
+      ]
+    },
+    "Value@StringValue": {
+      "String": ""
+    },
+    "Value@IntValue": 0,
+    "Value@NumberValue": 0,
+    "Value@BoolValue": false,
+    "Value@ObjectValue": {
+      "Ref": null
+    },
+    "Value@Vector3Value": {
+      "Vector3": [
+        0,
+        0,
+        0
+      ]
+    },
+    "Value@Color3Value": {
+      "Color3": "000000"
+    },
+    "SoundId": {
+      "Content": ""
+    },
+    "Volume": 0.5,
+    "Looped": false,
+    "Playing": false,
+    "PlaybackSpeed": 1,
+    "TeamColor": {
+      "Color3": "FFFFFF"
+    },
+    "AutoAssignable": true,
+    "PrimaryPart": {
+      "Ref": null
+    },
+    "Occupant": {
+      "Ref": null
+    },
+    "Source": {
+      "String": ""
+    },
+    "Health": 100,
+    "MaxHealth": 100,
+    "WalkSpeed": 16,
+    "JumpPower": 50,
+    "RequiresHandle": true,
+    "CanBeDropped": true,
+    "ToolTip": {
+      "String": ""
+    },
+    "Character": {
+      "Ref": null
+    },
+    "UserId": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "player": {
+    "id": "Pmartina",
+    "name": "Martina",
+    "password": "segreta1",
+    "gender": "female",
+    "createdAt": "2026-09-20T10:00:00Z",
+    "bodyColors": {
+      "head": "E0AC86",
+      "leftArm": "E0AC86",
+      "rightArm": "E0AC86",
+      "torso": "268FBD"
+    }
+  },
+  "friends": [
+    {"id": "Pleo", "name": "Leo", "online": true, "gender": "male"},
+    {"id": "Psara", "name": "Sara", "online": true, "gender": "female"},
+    {"id": "Ppietro", "name": "Pietro", "online": false, "gender": "male"}
+  ],
+  "games": [
+    {"id": "7d0b6d2e-6f7a-4a52-9a53-2c1f1f6c0b11", "title": "Torre dei Venti", "genre": "Avventura", "author": "Martina", "description": "Sali fino in cima prima che cali il sole."},
+    {"id": "3c9a1f42-8e5d-4b6a-a7c1-5f2e9d0b4a83", "title": "Corsa sui Tetti", "genre": "Corse", "author": "Leo", "description": "Salta da un tetto all’altro senza cadere in strada."},
+    {"id": "a51e7c30-2d94-4f8b-9e6a-0c3b8d1f7e25", "title": "Isola Tranquilla", "genre": "Simulazione", "author": "Sara", "description": "Pesca, costruisci la tua capanna e goditi il tramonto."}
+  ],
+  "weeklyPlays": 10,
+  "notifications": []
+}

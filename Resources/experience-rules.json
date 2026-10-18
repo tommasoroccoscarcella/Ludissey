@@ -1,0 +1,447 @@
+{
+  "site": {
+    "host": "ludissey.com",
+    "url": "https://ludissey.com"
+  },
+  "genres": [
+    "Avventura",
+    "Ruolo",
+    "Simulazione",
+    "Piattaforme",
+    "Combattimento",
+    "Corse",
+    "Altro"
+  ],
+  "defaultGenre": "Altro",
+  "serverSize": {
+    "minimum": 1,
+    "maximum": 50,
+    "standard": 20
+  },
+  "playerProtocol": 1,
+  "schemaVersion": 6,
+  "reservationSeconds": 120,
+  "heartbeatSeconds": 20,
+  "playerTimeoutSeconds": 75,
+  "emptyServerSeconds": 60,
+  "transactionAttempts": 6,
+  "statePollSeconds": 2,
+  "chatMessages": 30,
+  "chatCharacters": 120,
+  "chatBurst": 5,
+  "chatWindowSeconds": 10,
+  "respawnSeconds": 3,
+  "maximumHealth": 100,
+  "world": {
+    "parts": 200,
+    "horizontal": 25,
+    "vertical": 25,
+    "voidHeight": -40,
+    "minimumSize": 0.05,
+    "maximumSize": 200,
+    "payloadCharacters": 9500,
+    "titleCharacters": 60,
+    "nameCharacters": 40,
+    "experiencesPerDeveloper": 20
+  },
+  "part": {
+    "color": "9AA0A8",
+    "palette": [
+      "D8473B",
+      "A82D24",
+      "F08A80",
+      "2E6FF2",
+      "1F52C4",
+      "8FB4F7",
+      "F2C230",
+      "D9A400",
+      "2FA84F",
+      "1E7537",
+      "8FD19E",
+      "F28C28",
+      "C75B12",
+      "FFFFFF",
+      "C9CDD3",
+      "9AA0A8",
+      "5B6169",
+      "1B1D21",
+      "8B5A2B",
+      "5C3A1E",
+      "F2A6C1",
+      "7B4BC9",
+      "4FC3E8",
+      "1F8FB3"
+    ]
+  },
+  "baseplate": {
+    "name": "Baseplate",
+    "width": 60,
+    "height": 1,
+    "locked": false
+  },
+  "materials": [
+    "plastic",
+    "wood",
+    "metal",
+    "neon",
+    "glass"
+  ],
+  "lighting": {
+    "clockTime": {
+      "minimum": 0,
+      "maximum": 24,
+      "standard": 14
+    },
+    "brightness": {
+      "minimum": 0,
+      "maximum": 3,
+      "standard": 1
+    },
+    "fogEnd": {
+      "minimum": 20,
+      "maximum": 1000,
+      "standard": 400
+    },
+    "ambient": "8A8FA0",
+    "skyTop": "5B8ED6",
+    "skyHorizon": "CFE3F7"
+  },
+  "containers": [
+    "Workspace",
+    "ReplicatedStorage",
+    "ServerStorage",
+    "StarterPack"
+  ],
+  "kinds": [
+    "cube",
+    "sphere",
+    "cylinder",
+    "wedge",
+    "mesh",
+    "model",
+    "spawn",
+    "seat"
+  ],
+  "swimming": {
+    "speedFactor": 0.55,
+    "buoyancy": 0.85,
+    "drag": 3.0,
+    "ascend": 5.0
+  },
+  "terrain": {
+    "cellSize": 2,
+    "cellsX": 32,
+    "cellsY": 16,
+    "cellsZ": 32,
+    "chunk": 8,
+    "bottom": -16,
+    "levels": 15,
+    "materials": [
+      "air",
+      "grass",
+      "rock",
+      "sand",
+      "mud",
+      "water"
+    ],
+    "colors": [
+      "000000",
+      "5E9B3C",
+      "7F8087",
+      "D8C68E",
+      "6B4E36",
+      "3E7FD6"
+    ],
+    "keys": 4,
+    "keyCharacters": 9000,
+    "brush": {
+      "minimum": 1,
+      "maximum": 12,
+      "standard": 4
+    },
+    "generation": {
+      "amplitude": 6,
+      "baseHeight": 2,
+      "waterLevel": 0,
+      "octaves": 3
+    },
+    "stepUp": 0.75,
+    "format": 2,
+    "water": {
+      "color": "3E7FD6",
+      "seaRing": 1000,
+      "palette": [
+        "3E7FD6",
+        "2B5FA8",
+        "1F8A9E",
+        "3BA7A0",
+        "6FB7D9",
+        "2F4F6F",
+        "5E7F3A",
+        "8B6B45"
+      ],
+      "transparency": {
+        "standard": 0.35,
+        "minimum": 0,
+        "maximum": 1
+      },
+      "reflectance": {
+        "standard": 0.6,
+        "minimum": 0,
+        "maximum": 1
+      },
+      "waveSize": {
+        "standard": 0.12,
+        "minimum": 0,
+        "maximum": 1
+      },
+      "waveSpeed": {
+        "standard": 8,
+        "minimum": 0,
+        "maximum": 100
+      }
+    }
+  },
+  "replication": {
+    "intervalMilliseconds": 500,
+    "delayMilliseconds": 1000,
+    "snapshots": 12,
+    "staleSeconds": 6
+  },
+  "registryCharacters": 30000,
+  "lim": {
+    "languageVersion": "0.9",
+    "languageVersions": [
+      "0.9"
+    ],
+    "engineApiVersion": 1,
+    "schemaVersion": 5
+  },
+  "scriptData": {
+    "characters": 9000,
+    "experiences": 40
+  },
+  "serverList": {
+    "emptyTitle": "Nessun server attivo",
+    "emptyDetail": "Premi Gioca per avviare il primo server."
+  },
+  "maxServers": 40,
+  "locomotion": {
+    "stepHeight": 0.35,
+    "maxSlope": 60,
+    "substepHertz": 120,
+    "snapDistance": 0.05,
+    "simulationHertz": 60,
+    "seatCooldownSeconds": 2
+  },
+  "avatar": {
+    "nameCharacters": 20,
+    "bodyPresets": [
+      "male",
+      "female"
+    ],
+    "bodyPresetTitles": [
+      "Maschile",
+      "Femminile"
+    ],
+    "bodyParts": [
+      "head",
+      "torso",
+      "leftArm",
+      "rightArm",
+      "leftLeg",
+      "rightLeg"
+    ],
+    "bodyPartTitles": [
+      "Testa",
+      "Busto",
+      "Braccio sinistro",
+      "Braccio destro",
+      "Gamba sinistra",
+      "Gamba destra"
+    ],
+    "palette": [
+      "F1C9A5",
+      "E0AC86",
+      "C68A5E",
+      "A0694A",
+      "6E4630",
+      "FFE0C4",
+      "6633EE",
+      "268FBD",
+      "EC7855",
+      "2FA84F",
+      "E0392B",
+      "F2C230",
+      "1B1D21",
+      "F2F3F5",
+      "9AA0A8",
+      "3E4A61",
+      "A3A2A5",
+      "F5CD30",
+      "0D69AC",
+      "4B974B",
+      "C4281C",
+      "DA8541",
+      "1B2A35",
+      "F2F3F3"
+    ],
+    "categories": [
+      "hat",
+      "hair",
+      "faceAccessory",
+      "neckAccessory",
+      "shoulderAccessory",
+      "frontAccessory",
+      "backAccessory",
+      "waistAccessory",
+      "shirt",
+      "tshirt",
+      "pants",
+      "gear",
+      "face",
+      "head",
+      "torso",
+      "rightArm",
+      "leftArm",
+      "rightLeg",
+      "leftLeg",
+      "idleAnimation",
+      "walkAnimation",
+      "runAnimation",
+      "jumpAnimation",
+      "climbAnimation",
+      "fallAnimation"
+    ],
+    "categoryTitles": [
+      "Cappelli",
+      "Acconciature",
+      "Accessori viso",
+      "Accessori collo",
+      "Accessori spalle",
+      "Accessori frontali",
+      "Accessori schiena",
+      "Accessori in vita",
+      "Maglie",
+      "T-shirt",
+      "Pantaloni",
+      "Equipaggiamento",
+      "Volti",
+      "Teste",
+      "Busti",
+      "Braccia destre",
+      "Braccia sinistre",
+      "Gambe destre",
+      "Gambe sinistre",
+      "Riposo",
+      "Camminata",
+      "Corsa",
+      "Salto",
+      "Arrampicata",
+      "Caduta"
+    ],
+    "accessories": [
+      "hat",
+      "hair",
+      "faceAccessory",
+      "neckAccessory",
+      "shoulderAccessory",
+      "frontAccessory",
+      "backAccessory",
+      "waistAccessory"
+    ],
+    "groups": {
+      "clothing": [
+        "hat",
+        "hair",
+        "faceAccessory",
+        "neckAccessory",
+        "shoulderAccessory",
+        "frontAccessory",
+        "backAccessory",
+        "waistAccessory",
+        "shirt",
+        "tshirt",
+        "pants",
+        "gear"
+      ],
+      "body": [
+        "face",
+        "head",
+        "torso",
+        "rightArm",
+        "leftArm",
+        "rightLeg",
+        "leftLeg"
+      ],
+      "animations": [
+        "idleAnimation",
+        "walkAnimation",
+        "runAnimation",
+        "jumpAnimation",
+        "climbAnimation",
+        "fallAnimation"
+      ]
+    },
+    "limits": {
+      "hats": 3,
+      "accessories": 10
+    },
+    "standard": {
+      "bodyPreset": "male",
+      "bodyColors": {
+        "head": "F1C9A5",
+        "torso": "6633EE",
+        "leftArm": "F1C9A5",
+        "rightArm": "F1C9A5",
+        "leftLeg": "3E4A61",
+        "rightLeg": "3E4A61"
+      }
+    },
+    "view": {
+      "pitchMinimum": -0.05,
+      "pitchMaximum": 1.2,
+      "distanceMinimum": 1.5,
+      "distanceMaximum": 6
+    }
+  },
+  "instances": {
+    "maximum": 400,
+    "keys": 6,
+    "keyCharacters": 9000,
+    "sourceCharacters": 20000,
+    "nameCharacters": 60,
+    "textCharacters": 400
+  },
+  "account": {
+    "titleId": "1948A2",
+    "bioCharacters": 140,
+    "portraitPlayers": 60,
+    "portraitBust": 150,
+    "portraitFigure": 352,
+    "presenceSeconds": 90
+  },
+  "serverStates": {
+    "provisioning": "provisioning",
+    "ready": "ready",
+    "joinable": "joinable",
+    "full": "full",
+    "draining": "draining",
+    "terminated": "terminated"
+  },
+  "assets": {
+    "prefix": "ludissey://asset/",
+    "imageExtensions": [
+      "png",
+      "jpg",
+      "jpeg"
+    ],
+    "audioExtensions": [
+      "mp3",
+      "wav",
+      "m4a",
+      "aiff"
+    ],
+    "megabytes": 8
+  }
+}
